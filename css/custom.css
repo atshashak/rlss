@@ -1,0 +1,83 @@
+.nav-item .nav-link {
+    font: 500 16px/100px "Poppins", sans-serif !important;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 0px;
+    display: inline-block;
+}
+:root {
+  /* Not my favorite that line-height has to be united, but needed */
+  --lh: 1.4rem;
+}
+
+
+
+.truncate-overflow {
+  --max-lines: 3;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem; /* space for ellipsis */
+}
+.truncate-overflow::before {
+  position: absolute;
+  content: "...";
+  /* tempting... but shows when lines == content */
+/*   top: calc(var(--lh) * (var(--max-lines) - 1)); */
+  
+  /*
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  */
+  bottom: 0;
+  right: 0;
+}
+.truncate-overflow::after {
+/*  content: "...";*/
+  position: absolute;
+  /*
+  inset-inline-end: 0;
+  */
+  right: 0;
+  /* missing bottom on purpose*/
+/*
+  width: 1rem;
+  height: 1rem;
+*/
+  background: white;
+}
+
+.feature_area .overlay {
+background: url(../img/5.jpg) no-repeat scroll center center !important;
+    background-size: cover !important;
+}
+
+.genric-btn {
+    display: inline-block;
+    outline: none;
+    line-height: 40px;
+    padding: 0 30px;
+    font-size: 18px !important;
+}
+
+.causes_text p {
+    font-size: 16px !important;
+}
+
+p
+{
+     font-size: 18px !important;
+ color: #333333 !important;
+
+}
+
+
+body
+{
+    color: #333333 !important;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+   width: inherit !important; 
+}

@@ -1,0 +1,22 @@
+.header_area .navbar .nav .nav-item .nav-link {
+    font: 500 12px/100px "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 0px;
+    display: inline-block;
+}
+
+.imgfill{
+    
+   width: 100%;
+   height: auto;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+.banner_area .banner_inner .overlay {
+    background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+    position: absolute;
+}
